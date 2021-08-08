@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<link rel='icon' href='server-icon-title.ico' type='image/x-ico' />
-	<title>SaltyFishSurvival|Minecraft Vanilla Survival|Main Page</title>
+	<title>SaltyFishSurvival|Players</title>
 </head>
 <body class="mainpage" id="mainpage">
 	<style type="text/css">
-	body.mainpage{background-color: black}
+	body.mainpage{background-color: rgb(0,50,80);}
 	h1.ad{font-family: fantasy;
        font-size: 60px;
 }
@@ -25,20 +25,48 @@
 	h3.ai{
 		text-align: center;
 	}
+	h3.ar,h1.au{
+		text-align: center;
+		color: rgb(200,255,255);
+		font-family: rockwell;
+		font-size: 30px;
+	}
 	h1.ad,h3.aa{text-align: center;}
 	}
 	h1{text-decoration: overline;}
 	h2{color: black
 }
-	/*date*/
-	h3.bc,h3.ag,h3.al{color: white}
+	h3.ae,h3.ag,h3.al{color: white}
 	/*type=grad2*/
-	h3.bb{border-left-style: solid;
+	h3.af,h3.ak{border-left-style: solid;
 		  border-color: #64FFBD;
 		  border-left-width: 10px;
 		  text-indent:20px;
 		  color: #FFFFF0;
 		  font-family: "Agency FB"
+	}
+	h1.as,h1.at,h1.av{
+		color: rgb(255,255,230);
+		text-align: center;
+		font-family: "Agency FB";
+	}
+	h1.ax{
+		color: rgb(200,70,40);
+		text-align: center;
+		font-family: "Agency FB";
+	}
+	h1.ay{
+		color: rgb(200,255,170);
+		text-align: center;
+		font-family: "Agency FB";
+	}
+	h1.az{
+		color: rgb(255,255,200);
+		text-align: center;
+		font-family: "Agency FB";
+	}
+	h1.skin1{
+		margin-top: 20px;
 	}
 	/*type=grad3*/
 	h3.ah{border-left-style: solid;
@@ -48,20 +76,11 @@
 		  color: #FFFFF0;
 		  font-family: "Agency FB"
 }
-	/*type=gradfuture*/
-	h3.bd{
-		border-left-style: solid;
-		  border-color: #64FFBD;
-		  border-left-width: 10px;
-		  text-indent:20px;
-		  color: #FFFFF0;
-		  font-family: "Agency FB"
-	}
 	a.pagelink1{
 		color: rgb(0,255,230);
 		font-family: calibri;
 		font-size: 20px;
-		margin-left: 0px;
+		margin-left:0px;
 		padding: 0px -110px;
 		text-align: center;
 	}
@@ -118,7 +137,7 @@
 	}
 	#block1{
 		height: 55px;
-    background-image: linear-gradient(to bottom ,black, white,white,white,white,white,white, black)
+    background-image: linear-gradient(to bottom ,rgb(0,50,80), white,white,white,white,white,white, rgb(0,50,80))
 }	
 	#grad0{
 		height: 200px;
@@ -148,11 +167,6 @@
     	font-size:25px;
     background-image: linear-gradient(to right, #00868B, black)
     }
-    #gradfuture{
-    	height: 450px;
-    	font-size:25px;
-    background-image: linear-gradient(to right, #00868B, black)
-    }
 	</style>
 	<script type="text/javascript">
 		function pageselect(){
@@ -160,33 +174,32 @@
 			document.getElementById('pagelink2').style.display="block";
 			document.getElementById('pagelink3').style.display="block";
 			document.getElementById('pagelink4').style.display="block";
-			};
-
+		};
 	</script>
 	<h1 class="ao" id="block1" ><button type="button" class="but3" onclick="pageselect()">Pages</button></h1>
 	<a href="index.html" class="pagelink1" id="pagelink1" style="display: none;">Main Page</a>
 	<a href="history.html" class="pagelink2" id="pagelink2" style="display: none;">History</a>
 	<a href="players.html" class="pagelink3" id="pagelink3" style="display: none;">Players</a>
 	<a href="join.html" class="pagelink4" id="pagelink4" style="display: none;">Join SaltyFish</a>
-	<h1 class="ad">Welcome to SaltyFish Minecraft Survival!</h1>
-	<h1 id="grad0"></h1>
-	<h3 class="aa">Also check out IceDragon2048's website! It's much better!</h3>
-	<h3 class="ai"><a class="aj" target="_blank" href="http://198.52.116.18:39174/">Click me!</a></h3>
-	<h2>s</h2>
-	<h1 class="ac" id="grad1">News:</h1>
-	<h3 class="bd" id="gradfuture">
-		August 9, 2021 (NeutronStar714's birthday)<br>We'll be having a Dragon Slayer's Party (of course not slaying IceDragon2048)<br><br>
-		<img src="ender_dragon.gif" style="display: inline;" hspace="250" />
-	</h3>
-	<h3 class="bc">August 3, 2021</h3>
-	<h3 class="bb" id=grad2>
-		SaltyFishPvP has released! <br><br>
-		<img src="server-icon.png" height="300" hspace="20" /><br>
-	Things we might do on this server:<br>
-	· The Ultimate Hunt<br>
-	· Miner's War<br>
-	· UHC<br>
-	</h3>
+	<h1 class="ap" id="closebut1" style="display: none;"><button type="button" class="but2" onclick="rm1c()" >Close</button></h1>
+	<h1 class="ad">SaltyFishSurvival's Players:</h1>
+	<h3 class="ar">SaltyFishSurvival Admins:</h3>
+	<h1 class="as"><img src="icedragon2048head.png" height="40"  /> · IceDragon2048</h1>
+	<h1 class="at"><img src="NeutronStarhead.png" height="40" /> · NeutronStar714</h1>
+	<br>
+	<h1 class="au">SaltyFishSurvival members:</h3>
+	<h1 class="az"><img src="simonexmhead.png" height="40" /> · SimoneXM</h1>
+	<br>
+	<h1 class="au">Players/Guests:</h3>
+	<h1 class="ay"><img src="noimage.png" height="40" /> · 958668250</h1>
+	<h1 class="ay"><img src="noimage.png" height="40" /> · Liu_yan</h1>
+	<br>
+	<h1 class="au">Banned Players:</h3>
+	<h1 class="ax"><img src="dino1314head(banned).png" height="40" /> · Dinosaur1314</h1>
+	<h1 class="ax"><img src="dreamhead(banned).png" height="40" /> · Dream</h1>
+	<h1 class="ax"><img src="sapnaphead(banned).png" height="40" /> · Sapnap</h1>
+	<h1 class="ax"><img src="tommyinnithead(banned).png" height="40" /> · TommyInnit</h1>
+	<br>
 	<style type="text/css">
 		h3.ba{
 			color: rgb(120,170,170);
@@ -197,20 +210,7 @@
 			border-style: ridge;
 			border-width: 3px;
 		}
-		h3.bf{
-			color: #FFFFF0;
-			font-size: 36px;
-			font-family: fantasy;
-		}
-		h3.bg{
-			color: #FFFFF0;
-			font-size: 20px;
-			font-family: "rockwell";
-		}
 	</style>
-	<h3 class="bf">Server IP:</h3>
-	<h3 class="bg">Survival 1.16.5: constanly changing, hosted by IceDragon2048<br>Survival 1.17: 219.150.218.20:50698<br>PvP: also 219.150.218:50698</h3>
-	
 
 	<h3 class="ba">SaltyFish 2021 &copy; Copyright. All rights reserved. </h3>
 </body>
